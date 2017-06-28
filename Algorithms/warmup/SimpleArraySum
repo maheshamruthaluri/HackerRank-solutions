@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class SimpleArraySum {
+	
+	static long arraySum(int a, long[] arr) {
+		long sum = 0;
+		for(long n : arr){
+		 sum += n;
+		}
+		return sum;
+	}
+	
+	
+	public static void main(String args[]){
+		Scanner in = new Scanner(System.in);
+		int a = in.nextInt();
+		long[] arr = new long[a];
+		for(int i = 0; i < a; i++){
+			arr[i] = in.nextLong();
+		}
+		long result = arraySum(a, arr);
+		System.out.println(result);
+	}
+
+}
