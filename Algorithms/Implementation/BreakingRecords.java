@@ -24,14 +24,14 @@ public class BreakingRecords {
 	}
 	
 	public static void main(String[] args) {
-		BreakingRecords records = new BreakingRecords();
-        Scanner in = new Scanner(System.in);
+        
+		Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int[] s = new int[n];
         for(int s_i=0; s_i < n; s_i++){
             s[s_i] = in.nextInt();
         }
-        records.getRecord(s);
+        BreakingRecords.getRecord(s);
         //System.out.println(result);
         
 
