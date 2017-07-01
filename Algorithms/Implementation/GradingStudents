@@ -1,1 +1,30 @@
 
+import java.util.Scanner;
+
+public class GradingStudents {
+	
+	
+	
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int[] grades = new int[n];
+		for(int j=0; j<n; j++){
+			grades[j] = sc.nextInt();
+		}
+		for(int i=0; i<n ; i++ ){
+			int finalGrade = ((grades[i]/5) + 1) * 5;
+			if(grades[i] < 38){
+				System.out.println(grades[i]);
+			}else if(grades[i] >= 38 && finalGrade - grades[i] < 3){
+				System.out.println(finalGrade);
+			}else{
+				System.out.println(grades[i]);
+			}
+		}
+		
+		
+		
+	}
+
+}
