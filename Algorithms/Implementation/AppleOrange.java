@@ -21,14 +21,14 @@ public class AppleOrange {
             orange[orange_i] = in.nextInt();
         }
         for(int i=0; i<m; i++){
-        	temp = a + apple[i];
-        	if(temp >= s && temp <= t){
+        	
+        	if(a + apple[i] >= s && a + apple[i] <= t){
         		countApple ++;
         	}
         }
         for(int j=0; j<n; j++){
-        	temp = b + orange[j];
-        	if(temp <= t && temp >= s){
+        	
+        	if(b + orange[j] <= t && b + orange[j] >= s){
         		countOrange++;
         	}
         }
