@@ -21,7 +21,6 @@ public class MarsExploration {
 		String s = in.next();//length is a multiple of 3
 		int size = s.length();
 		int count = 0;
-		char p = 'P';
 		for(int i=0; i<s.length(); i++){
 			if(s.charAt(i) != compare.charAt(i%3)){
 				count ++;
